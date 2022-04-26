@@ -26,7 +26,7 @@ import org.subethamail.smtp.server.SMTPServer;
 public class SMTPServerBeanConfig
 {	
 	
-	@Value("${direct.smtpmqgateway.binding.port:1025}")
+	@Value("${direct.smtpmqgateway.binding.port:1026}")
 	public int port;
 	
 	@Value("${direct.smtpmqgateway.binding.host:0.0.0.0}")
