@@ -1,0 +1,19 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: direct-smtp-mq-gateway
+  labels:
+    apps.tanzu.vmware.com/workload-type: tcp
+    app.kubernetes.io/part-of: direct-project
+spec:
+  serviceClaims:
+  - name: rmq
+    ref:
+      apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+      kind: ResourceClaim
+      name: rmq-1
+  source:
+    git:
+      url: https://github.com/gm2552/direct-smtp-mq-gateway.git
+      ref:
+        branch: master
