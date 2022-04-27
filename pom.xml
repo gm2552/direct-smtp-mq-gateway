@@ -79,12 +79,6 @@
 	    <dependency>
 	        <groupId>org.springframework.cloud</groupId>
 	        <artifactId>spring-cloud-starter-stream-rabbit</artifactId>        
-		      <exclusions>
-		        <exclusion>  <!-- declare the exclusion here -->
-		          <groupId>org.springframework</groupId>
-		          <artifactId>spring-web</artifactId>
-		        </exclusion>
-		      </exclusions> 								        
 	    </dependency>		
 		<dependency>
 		    <groupId>org.springframework.cloud</groupId>
@@ -110,13 +104,7 @@
 		<dependency>
 			<groupId>org.nhind</groupId>
 			<artifactId>direct-common</artifactId>
-			<version>8.0.0</version>
-		      <exclusions>
-		        <exclusion>  <!-- declare the exclusion here -->
-		          <groupId>org.springframework.cloud</groupId>
-		          <artifactId>spring-cloud-starter-openfeign</artifactId>
-		        </exclusion>
-		      </exclusions> 					
+			<version>8.0.0</version>		
 		</dependency>		
 		<dependency>
 			<groupId>org.subethamail</groupId>
