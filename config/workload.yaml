@@ -17,3 +17,9 @@ spec:
       url: https://github.com/gm2552/direct-smtp-mq-gateway.git
       ref:
         branch: master
+  params:
+  - name: ports
+    value:
+    - port: 25
+      containerPort: 1026
+      name: smtp
